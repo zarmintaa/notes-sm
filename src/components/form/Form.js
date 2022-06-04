@@ -91,8 +91,7 @@ const Form = ({ submitData }) => {
             type="checkbox"
             checked={checkbox}
             onChange={(e) => setCheckbox(e.target.checked)}
-            value=""
-            className="w-4 h-4 text-yellow-600 bg-gray-100 rounded border-gray-300 focus:ring-yellow-500 "
+            className="w-4 h-4 text-yellow-600 bg-gray-100 rounded border-gray-300 focus:ring-yellow-500"
           />
           <label
             htmlFor="default-checkbox"

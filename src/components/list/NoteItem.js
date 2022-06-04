@@ -17,7 +17,7 @@ const NoteItem = ({
       className={` p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 h-fit grid gap-2`}
     >
       <div className="block">
-        <h1 className="text-2xl font-bold  text-gray-800">{title}</h1>
+        <h1 className="text-2xl font-semibold  text-gray-800">{title}</h1>
       </div>
       <span className="text-sm text-gray-500 ">
         {DataHelper.showFormattedDate(createdAt)}

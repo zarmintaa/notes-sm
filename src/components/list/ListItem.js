@@ -21,7 +21,7 @@ const ListItem = ({ notes, onDeleteData, onArchiveData, onEdited }) => {
   return (
     <div className="grid lg:grid-cols-2 gap-4 mt-5 mx-2.5 lg:mx-0">
       <div className="grid gap-4 h-fit">
-        <h1 className="font-medium text-xl">Tidak Diarsipkan</h1>
+        <h1 className="font-bold text-xl">Tidak Diarsipkan</h1>
         {listNotes.unarchived.length === 0 && <NoteNotFound />}
         {listNotes.unarchived.map((item) => (
           <NoteItem
@@ -38,7 +38,7 @@ const ListItem = ({ notes, onDeleteData, onArchiveData, onEdited }) => {
         ))}
       </div>
       <div className="grid gap-4 h-fit">
-        <h1 className="font-medium text-xl">Diarsipkan</h1>
+        <h1 className="text-xl font-bold">Diarsipkan</h1>
         {listNotes.archived.length === 0 && <NoteNotFound />}
         {listNotes.archived.map((item) => (
           <NoteItem
