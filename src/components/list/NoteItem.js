@@ -12,7 +12,6 @@ const NoteItem = ({
   noteId,
   onDelete,
 }) => {
-  const color = archieved ? "green" : "red";
   return (
     <div
       className={` p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 h-fit grid gap-2`}

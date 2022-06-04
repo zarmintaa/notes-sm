@@ -15,8 +15,6 @@ const ListItem = ({ notes, onDeleteData, onArchiveData, onEdited }) => {
     }
   });
 
-  console.log(listNotes);
-
   return (
     <div className="grid lg:grid-cols-2 gap-4 mt-5 mx-2.5 lg:mx-0">
       <div className="grid gap-4 h-fit">
