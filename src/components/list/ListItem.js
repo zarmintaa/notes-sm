@@ -2,18 +2,17 @@ import NoteItem from "./NoteItem";
 import NoteNotFound from "./../layouts/NoteNotFound";
 
 const ListItem = ({ notes, onDeleteData, onArchiveData, onEdited }) => {
-  const listNotes = {
-    archived: [],
-    unarchived: [],
-  };
-
-  notes.filter((item) => {
-    if (item.archived) {
-      listNotes.archived.push(item);
-    } else {
-      listNotes.unarchived.push(item);
-    }
-  });
+  const listNotes = notes.reduce(
+    (acc, item) => {
+      if (item.archived) {
+        acc.archived.push(item);
+      } else {
+        acc.unarchived.push(item);
+      }
+      return acc;
+    },
+    { archived: [], unarchived: [] }
+  );
 
   return (
     <div className="grid lg:grid-cols-2 gap-4 mt-5 mx-2.5 lg:mx-0">
