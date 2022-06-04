@@ -1,3 +1,4 @@
+import data from "./../utils/data";
 class DataHelper {
   static createData(title, body, archived) {
     return {
@@ -15,7 +16,7 @@ class DataHelper {
       if (getData) {
         return JSON.parse(getData);
       } else {
-        localStorage.setItem("notes", JSON.stringify([]));
+        localStorage.setItem("notes", JSON.stringify(data));
       }
     }
   }
