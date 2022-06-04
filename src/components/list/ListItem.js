@@ -2,7 +2,7 @@ import NoteItem from "./NoteItem";
 import NoteNotFound from "./../layouts/NoteNotFound";
 
 const ListItem = ({ notes, onDeleteData, onArchiveData, onEdited }) => {
-  let listNotes;
+  let listNotes = [];
 
   if (notes) {
     listNotes = notes.reduce(

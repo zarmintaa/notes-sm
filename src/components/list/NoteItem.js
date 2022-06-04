@@ -10,7 +10,6 @@ const NoteItem = ({
   actionDelete,
   actionStatus,
   noteId,
-  onDelete,
 }) => {
   return (
     <div

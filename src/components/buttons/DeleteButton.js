@@ -1,7 +1,7 @@
 const DeleteButton = ({ actionDelete, noteId }) => {
   return (
     <button
-      type="submit"
+      type="button"
       onClick={() => actionDelete(noteId)}
       className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-1.5 focus:outline-none flex items-center gap-x-2"
     >
