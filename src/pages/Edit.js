@@ -68,7 +68,7 @@ const Edit = () => {
           <input
             type="text"
             id="title"
-            className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 ${
+            className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 ${
               title.length === 50
                 ? "focus:ring-red-500 focus:border-red-500"
                 : "focus:ring-yellow-500 focus:border-yellow-500"
@@ -89,7 +89,7 @@ const Edit = () => {
           <textarea
             id="body"
             rows="4"
-            className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-yellow-500 focus:border-yellow-500  "
+            className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-yellow-500 focus:border-yellow-500"
             placeholder="Catatan..."
             value={body}
             onChange={(e) => setBody(e.target.value)}
@@ -103,7 +103,7 @@ const Edit = () => {
               checked={checkbox}
               onChange={(e) => setCheckbox(e.target.checked)}
               value=""
-              className="w-4 h-4 text-yellow-600 bg-gray-100 rounded border-gray-300 focus:ring-yellow-500 "
+              className="w-4 h-4 text-yellow-600 bg-gray-100 rounded border-gray-300 focus:ring-yellow-500"
             />
             <label
               htmlFor="default-checkbox"
@@ -115,7 +115,7 @@ const Edit = () => {
         </div>
         <button
           type="submit"
-          className="text-black bg-yellow-500 hover:bg-yellow-600 hover:text-white focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 "
+          className="text-black bg-yellow-500 hover:bg-yellow-600 hover:text-white focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
         >
           Edit
         </button>

@@ -1,7 +1,7 @@
 import Container from "./Wrapper";
 import { NavLink, Link } from "react-router-dom";
 const Navbar = () => {
-  let activeClassName = {
+  const activeClassName = {
     fontWeight: "bold",
   };
 
